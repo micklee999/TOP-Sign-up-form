@@ -60,8 +60,87 @@ img {
 
 .right {
     display: flex;
-    background-color: black;
+    flex-direction: column;
+    background-color: rgb(222, 222, 222);
     opacity: 1;
     width: 60vw;
     height: 100vh;
+    font-size: 15px;
+}
+
+.text {
+    display: flex;
+    margin: 100px 30px 40px;
+    font-size: inherit;
+}
+
+.form-area {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 30vh;
+    width: 100%;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.155);
+}
+
+.form-header {
+    margin: 20px 30px;
+    font-weight: bold;
+    font-size: inherit;
+}
+
+#sign-up-form {
+    margin: 0px 30px
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+}
+
+input:focus {
+    border: 1px solid lightblue;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.356);
+}
+
+input:user-invalid {
+    border: 1px solid red;
+}
+
+label {
+    font-size: 10px;
+    color: rgb(68, 68, 68);
+}
+
+.name,
+.contact,
+.password {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 10em;
+    margin: 30px 30px 10px 30px;
+    padding: 10px 20px;
+    background-color: #596D48;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.login {
+    color: #596D48;
+    font-weight: bold;
+}
+
+.last-line {
+    margin-left: 30px;
 }
