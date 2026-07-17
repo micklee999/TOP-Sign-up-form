@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'NorseBold';
+    src: url('norse/Norsebold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    background-image: url('background-picture.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.left {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 40vw;
+    height: 100vh;
+}
+
+.odin {
+    position: absolute;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-family: 'NorseBold';
+    font-weight: normal;
+    font-size: 80px;
+    width: 100%;
+    background-color: #00000080;
+    /*TBR*/
+    color: white;
+}
+
+img {
+    width: auto;
+    height: 1em;
+}
+
+.credits {
+    position: absolute;
+    top: 95%;
+    display: flex;
+    white-space: pre-wrap;
+    justify-content: center;
+    width: 100%;
+    color: white;
+}
+
+.right {
+    display: flex;
+    background-color: black;
+    opacity: 1;
+    width: 60vw;
+    height: 100vh;
+}
